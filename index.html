@@ -1,19 +1,95 @@
+<!DOCTYPE html>
 <html>
 <head>
   <title>Rahma Restaurant</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f8f8f8;
+    }
+
+    header {
+      background-color: #e63946;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      padding: 20px;
+      text-align: center;
+    }
+
+    img {
+      width: 250px;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    .menu-item {
+      background: white;
+      margin: 10px auto;
+      padding: 10px;
+      width: 200px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #2a9d8f;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 15px;
+    }
+
+    .btn:hover {
+      background-color: #21867a;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+
 </head>
 
 <body>
 
-<h1>Rahma Restaurant</h1>
-<p>Delicious & Affordable Meals</p>
+<header>
+  <h1>Rahma Restaurant</h1>
+  <p>Delicious & Affordable Meals</p>
+</header>
 
-<img src="./IMG-20260509-WA0119.jpg" width="250">
+<div class="container">
 
-<h2>Menu</h2>
-<p>🍚 Rice</p>
-<p>🍗 Chicken</p>
-<p>🍝 Spaghetti</p>
+  <img src="./IMG-20260509-WA0119.jpg" alt="food">
+
+  <h2>Our Menu</h2>
+
+  <div class="menu-item">🍚 Rice</div>
+  <div class="menu-item">🍗 Chicken</div>
+  <div class="menu-item">🍝 Spaghetti</div>
+
+  <a href="#" class="btn">Order Now</a>
+
+</div>
+
+<footer>
+  © 2026 Rahma Restaurant
+</footer>
 
 </body>
 </html>
