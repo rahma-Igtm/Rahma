@@ -99,9 +99,42 @@
 }
 </style>
 </head>
+<script>
+function sendOrder(event) {
+  event.preventDefault();
 
+  let food = document.getElementById("food").value;
+  let qty = document.getElementById("qty").value;
+
+  let message = "Hello, I want to order: " + food + " x" + qty;
+
+  let phone = "2348123456789"; // change to your number
+
+  let url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
+
+  window.open(url, "_blank");
+}
+</script>
 <body>
+<h2>🛒 Place Your Order</h2>
 
+<form onsubmit="sendOrder(event)" style="max-width:300px;margin:auto;text-align:left;">
+
+  <label>Choose Food:</label><br>
+  <select id="food" style="width:100%;padding:8px;">
+    <option>Jollof Rice</option>
+    <option>Fried Rice</option>
+    <option>Amala & Ewedu</option>
+    <option>Chicken</option>
+    <option>Meat Pie</option>
+  </select><br><br>
+
+  <label>Quantity:</label><br>
+  <input type="number" id="qty" min="1" value="1" style="width:100%;padding:8px;"><br><br>
+
+  <button type="submit" class="btn">Order via WhatsApp</button>
+
+</form>
 <!-- HEADER -->
 <div class="header">
   <h1>Rahma Restaurant</h1>
@@ -115,7 +148,9 @@
   <a href="menu.html" class="btn">View Full Menu</a>
 <a href="gallery.html" class="btn">View Food Gallery</a>
   <h2>Our Menu</h2>
-
+<a href="https://wa.me/2349017273185?text=Hello%20I%20want%20to%20order%20food" class="btn">
+Order on WhatsApp
+</a>
   <div class="menu">🍚 Rice - ₦1,000</div>
   <div class="menu">🍗 Chicken - ₦1,500</div>
   <div class="menu">🍝 Spaghetti - ₦1,200</div>
