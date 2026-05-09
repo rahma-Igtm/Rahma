@@ -1,31 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Rahma Restaurant</title>
+    <title>Rahma Restaurant</title>
+    <style>
+        body{
+            font-family: Arial;
+            margin:0;
+            padding:0;
+            background:#f5f5f5;
+            text-align:center;
+        }
+
+        header{
+            background:green;
+            color:white;
+            padding:20px;
+        }
+
+        .hero{
+            padding:40px;
+        }
+
+        .hero img{
+            width:300px;
+            border-radius:10px;
+        }
+
+        .menu{
+            background:white;
+            margin:20px;
+            padding:20px;
+            border-radius:10px;
+        }
+
+        button{
+            background:orange;
+            color:white;
+            border:none;
+            padding:15px 25px;
+            font-size:18px;
+            border-radius:5px;
+        }
+
+        footer{
+            background:black;
+            color:white;
+            padding:15px;
+            margin-top:20px;
+        }
+    </style>
 </head>
 
-<body style="text-align:center; font-family:Arial;">
+<body>
 
-  <h1>🍛 Rahma Restaurant</h1>
-  <h3>Delicious & Affordable Meals</h3>
+<header>
+    <h1>Rahma Restaurant</h1>
+    <p>Delicious & Affordable Meals</p>
+</header>
 
-  <h2>Our Popular Meals</h2>
+<div class="hero">
+    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Food">
+    
+    <h2>Welcome to Rahma Restaurant</h2>
+    
+    <p>We serve delicious rice, chicken, burger and drinks.</p>
 
-  <img src="https://images.unsplash.com/photo-1604908177522-0402d7d1a3b0" width="200">
-  <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950" width="200">
-  <img src="https://images.unsplash.com/photo-1606756790138-261d2b21cd75" width="200">
+    <button>Order Online</button>
+</div>
 
-  <br><br>
+<div class="menu">
+    <h2>Our Menu</h2>
 
-  <a href="menu.html">
-    <button>📋 View Menu</button>
-  </a>
+    <p>🍛 Jollof Rice - ₦2500</p>
+    <p>🍔 Burger - ₦3000</p>
+    <p>🍗 Chicken & Chips - ₦3500</p>
+    <p>🥤 Soft Drinks - ₦800</p>
+</div>
 
-  <a href="https://wa.me/2349017273185" target="_blank">
-    <button style="background:green; color:white; padding:10px;">
-      🛒 Order on WhatsApp
-    </button>
-  </a>
+<footer>
+    <p>Call us: 09017273185</p>
+</footer>
 
 </body>
 </html>
